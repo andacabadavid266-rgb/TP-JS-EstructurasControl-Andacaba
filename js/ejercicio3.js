@@ -1,3 +1,6 @@
+import promptSync from 'prompt-sync';  
+const prompt=promptSync();
+
 let sueldoBruto = parseFloat(prompt("Ingrese el Sueldo Bruto: "));
 
 

@@ -1,3 +1,6 @@
+import promptSync from 'prompt-sync';  
+const prompt=promptSync();
+
 let rol = prompt("Ingrese su rol (admin, cliente, editor: )");
 let estado = prompt("Ingrese su estado (activa, suspendida: )");
 let hora = parseInt(prompt("Ingrese la hora actual (0 a 23)"), 10);

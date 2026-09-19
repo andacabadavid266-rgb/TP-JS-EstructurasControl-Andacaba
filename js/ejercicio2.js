@@ -1,3 +1,6 @@
+import promptSync from 'prompt-sync';  
+const prompt=promptSync();
+
 const tarifaTercero = 45000;
 const tarifaTerceroCompleto = 70000;
 const tarifaTodoRiesgo = 110000;

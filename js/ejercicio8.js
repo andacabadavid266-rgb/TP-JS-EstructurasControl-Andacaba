@@ -1,3 +1,6 @@
+import promptSync from 'prompt-sync';  
+const prompt=promptSync();
+
 const montoCarrito = parseFloat(prompt("Monto del carrito: "));
 const categoria = prompt("Categoría (Bronce, Plata, Oro): ");
 const cupon = prompt("Cupón (DESC10, SUPER20 o ninguno): ");
@@ -32,7 +35,7 @@ if (subtotal > 100000) {
 
 const totalPagar = subtotal + envio;
 
-// Muestra de resultados
+
 console.log("Descuento aplicado: "+totalDescuento);
 console.log("Costo de envío: "+envio);
 console.log("Total a pagar:"+totalPagar);

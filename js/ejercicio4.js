@@ -1,3 +1,5 @@
+import promptSync from 'prompt-sync';  
+const prompt=promptSync();
 
 const bajadaBandera = 800;
 const costoPorKM = 350;
@@ -28,7 +30,7 @@ switch (nivelDemanda) {
     console.log("Nivel de demanda no reconocido. Se aplicará el factor por defecto (1.0).");
 }
 
-// Cálculo del subtotal base
+
 const costoDistancia = distanciaKm * costoPorKM;
 const costoTiempo = tiempoMinutos * costoPorMinuto;
 const subtotalBase =bajadaBandera + costoDistancia + costoTiempo;

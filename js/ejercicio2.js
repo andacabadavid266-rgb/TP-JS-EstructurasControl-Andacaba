@@ -30,8 +30,7 @@ if (tarifaBase > 0) {
          if (edadConductor < 25) {
             precioFinal += tarifaBase * 0.20;
         }
-
-        if (accidentes === 0) {
+         if (accidentes === 0) {
             precioFinal -= tarifaBase * 0.10; 
         } else if (accidentes >= 3) {
             precioFinal += tarifaBase * 0.30; 
